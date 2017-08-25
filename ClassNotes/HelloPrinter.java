@@ -70,6 +70,25 @@ public class HelloPrinter
          */
         String firstName;
         
+        /*
+         * This is a compile-time error. (This code doesn't even compile.)
+         */
+        //System.ou.println( "Hello, World!" );
+        
+        /*
+         * This is a run-time error. (This code compiles and runs, but
+         *      generates an exception. (The program crashes in most cases.)
+         */
+        //System.out.println( 1/0 );
+        
+        /*
+         * This is also a run-time error. (This code compiles and runs, but
+         *      it doesn't produce the expected output.)
+         *  More specifically, this is a logical error.
+         */
+        System.out.println( "Hello, Word!" );
+        
+        
     }
 }
 
