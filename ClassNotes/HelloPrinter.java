@@ -37,6 +37,58 @@ public class HelloPrinter
         
         // this is a single-line comment (like # in python)
         
+        /*
+         * Identifiers are any combination of:
+         *      letters
+         *      digits (but no as the first character)
+         *      underscores
+         *      dollar signs
+         *  
+         * These are various identifiers:
+         */
+        int y, x2, x_y, x$;
+        
+        // This is not a valid identifier
+        //int 2y;
+        
+        /*
+         * Identifiers are case sensitive (capitalization matters).
+         *  These are three differenet identifiers:
+         */
+        String box, BOX, Box;
+        
+        /*
+         * By convention, constants are all uppercase.
+         *      Use an underscore to separate words.
+         */
+        int SPEED_OF_LIGHT = 300000000;
+        
+        /*
+         * By convention, all other identifiers start with a lowercase letter.
+         *      Subsequent words start with an uppercase letter (CamalCase)
+         */
+        String firstName;
+        
+        /*
+         * This is a compile-time error. (This code doesn't even compile.)
+         */
+        //System.ou.println( "Hello, World!" );
+        
+        /*
+         * This is a run-time error.
+         *      More specifically, this error generates an exception.
+         *      (The program crashes in most cases.)
+         */
+        //System.out.println( 1/0 );
+        
+        /*
+         * This is also a run-time error. (This code compiles and runs,
+         *      but it doesn't produce the expected output.)
+         *      
+         * More specifically, this is a logical error.
+         */
+        System.out.println( "Hello, Word!" );
+        
     }
 }
 
