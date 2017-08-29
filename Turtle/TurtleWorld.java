@@ -27,9 +27,44 @@ public class TurtleWorld
          * World and Turtle are classes
          */
         World turtleWorld = new World();
+        
+        /*
+         * We use the new operator to construct (create) an object.
+         *  The class of the object is specified immediately after the
+         *      new operator (e.g., Turtle).
+         *  If we have to pass additional information to create the object,
+         *      arguments are specified in parentheses after the class
+         *      (e.g., turtleWorld).
+         *  A reference to the newly created object is returned by the
+         *      new operator.
+         */
         Turtle crush = new Turtle(turtleWorld);
+        
+        /*
+         * When invoking methods, we use the dot operator to invoke a method
+         *      on an object.
+         *  Some methods, take no arguments, but we still hav eparentheses
+         *      (e.g., penDown).
+         *  Some methods take one or more arguments (e.g., forward).
+         *  
+         *  Mutator methods modify the state (i.e., properties) of the object.
+         *      setPenColor, penDown, forward are all mutator methods
+         */
         crush.setPenColor(Color.RED);
         crush.penDown();
         crush.forward(50);
+        crush.setPenWidth(width);
+        
+        /*
+         * Accessor methods return the value of a property of the object.
+         *  The state of the object does not change.
+         *  In general, accessor methods start with "get" and return values.
+         *  
+         *  getHeading is an accessor method
+         */
+        double heading = crush.getHeading();
     }
 }
+
+
+
